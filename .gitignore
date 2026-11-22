@@ -1,0 +1,41 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Environment variables
+.env
+.env.local
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Large Dataset (Raw CSV should not be pushed to GitHub)
+dataset/*.csv
+!dataset/sample_creditcard.csv
+
+# Model artifacts (keep models/ folder but exclude huge raw dumps if needed)
+models/*.pkl
+models/*.joblib
+models/*.json
+!models/metrics.json
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+scratch/

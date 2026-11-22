@@ -1,0 +1,166 @@
+/* Premium Fintech Dark Navy Theme for AI Fraud Detection System */
+
+:root {
+    --bg-primary: #0A0E1A;
+    --bg-surface: #111827;
+    --bg-card: #1A2234;
+    --bg-card-hover: #222D42;
+    --border-color: #2D3748;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --text-muted: #64748B;
+    
+    --accent-blue: #3B82F6;
+    --accent-cyan: #06B6D4;
+    --accent-purple: #8B5CF6;
+    
+    --status-safe: #10B981;
+    --status-warning: #F59E0B;
+    --status-danger: #EF4444;
+}
+
+/* Global Container Styling */
+.main .block-container {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    max-width: 1400px;
+}
+
+/* Header & Banner */
+.fintech-header {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F2042 100%);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.fintech-title {
+    color: #F8FAFC;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.fintech-subtitle {
+    color: #94A3B8;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
+
+/* KPI Metric Cards */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.kpi-card {
+    background: #151D30;
+    border: 1px solid #23314E;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.kpi-card:hover {
+    transform: translateY(-2px);
+    border-color: #3B82F6;
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.15);
+}
+
+.kpi-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #94A3B8;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+}
+
+.kpi-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #F8FAFC;
+    line-height: 1.2;
+}
+
+.kpi-sub {
+    font-size: 0.75rem;
+    color: #64748B;
+    margin-top: 0.4rem;
+}
+
+/* Risk Badges */
+.badge-low {
+    background-color: rgba(16, 185, 129, 0.15);
+    color: #10B981;
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge-medium {
+    background-color: rgba(245, 158, 11, 0.15);
+    color: #F59E0B;
+    border: 1px solid rgba(245, 158, 11, 0.4);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge-high {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #EF4444;
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Prediction Result Card */
+.result-card {
+    background: #151D30;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid #23314E;
+    margin: 1.5rem 0;
+}
+
+.result-card.risk-high {
+    border-left: 5px solid #EF4444;
+}
+
+.result-card.risk-medium {
+    border-left: 5px solid #F59E0B;
+}
+
+.result-card.risk-low {
+    border-left: 5px solid #10B981;
+}
+
+/* Clean Alert styling */
+.disclaimer-banner {
+    background: rgba(30, 41, 59, 0.6);
+    border-left: 3px solid #3B82F6;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    color: #94A3B8;
+    margin: 1rem 0;
+}
