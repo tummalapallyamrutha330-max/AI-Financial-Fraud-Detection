@@ -39,3 +39,25 @@ Thumbs.db
 # Logs & temp
 *.log
 scratch/
+
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Generated files
+*.log
+.DS_Store
+
+!models/best_fraud_model.joblib
+!models/scaler.joblib
